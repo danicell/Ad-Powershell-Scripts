@@ -30,15 +30,15 @@
 ##################################################################################################################
 Clear-Host
 ## variables
-$SQLServer = "AlwaysOnAG_2014.sa.yazaki.local"
+$SQLServer = "SQL_Server_Name"
 $SQLPort = "1433"
-$SQLUser = "ad_dat_integration"
-$DBName = "AD_DATASUL_INTEGRATION"
+$SQLUser = "User_SQL"
+$DBName = "DBNAME"
 $DBTAB = "INTEGRATION"
-$SQLPassword = "datint12#"
-$FileLocation = "\\ymtatbrfiles2\FTP.YBL"
-$DomainOU = "ou=Office Locations,dc=sa,dc=yazaki,dc=local" #OU where users are stored. I Recommend that you create a test OU with some test users to test first.
-$QuarantineOU = "OU=Quarantine,OU=Disabled Users,DC=SA,DC=YAZAKI,DC=LOCAL" #OU where fired employee is be stored. Normally, we will put them off of all groups after some months.
+$SQLPassword = "password"
+$FileLocation = "\\server\share"
+$DomainOU = "ou=users,dc=contoso,dc=local" #OU where users are stored. I Recommend that you create a test OU with some test users to test first.
+$QuarantineOU = "OU=Quarantine,OU=Disabled Users,dc=contoso,dc=local" #OU where fired employee is be stored. Normally, we will put them off of all groups after some months.
 $Sep = "|" #This is the separator of CSV (Integration file)
 
 ## date variables
